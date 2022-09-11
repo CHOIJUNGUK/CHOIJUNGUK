@@ -18,24 +18,27 @@ function App3() {
 
 //  useEffect(test1());
 
-  // useEffect =  useEffectFunc();
+// useEffect =  useEffectFunc();
 
-  // useEffect(() => {
+// useEffect(() => {
   //   let num = time++;
   //   setTime(num);
-    // const id = setInterval(() => {
+  // const id = setInterval(() => {
     //   setTime(new Date());
     // }, 1000);
   //   // return (() => clearInterval(id))
 
 
   // }, []);
-
-  let button1_click = ()=> {
   
+  
+  let button1_click = ()=> {
+    
+    // useEffect(()=>{
+      setTime(time+1);
+    // })
   
     alert("버튼누름")
-  
   
   };
 
