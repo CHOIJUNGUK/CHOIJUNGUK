@@ -4,7 +4,7 @@ import './index.css';
 function App2() {
   return(
     <div className="App2">
-     <header class name="App2">
+     <header class name="App-2">
       <img src={logo} className="App2-logo" alt="logo"/>
       <p>
       Edit <code>src/index.js</code> and save to reload.

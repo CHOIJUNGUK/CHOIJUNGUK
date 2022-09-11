@@ -5,7 +5,7 @@ import './index.css';
 import App1 from './App';
 import reportWebVitals from './reportWebVitals';
 import App2 from './Test';
-
+import App3 from './App3.js';
 // 현위치 public 
 // ./ : 현위치, ../ : 상위 , 하위폴더로 이동 : /하위폴더/이미지.png
 // 현위치 : react-test/src 안에
@@ -16,8 +16,8 @@ const root = ReactDOM1.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App1 />
-    <App2/>
-    
+    <App2 />
+    <App3 />
      
   </React.StrictMode>
 );
