@@ -38,30 +38,41 @@ function App3() {
       setTime(time+1);
     // })
   
-    alert("버튼누름")
+    // alert("버튼누름")
   
   };
-
+  let button2_click =()=> {
+     setTime(time-1);
+  }
+  
+  
+  
   // function () {
   //   console.log('버튼누름');
   // }
   
   return (
-    // <div>
-    //   <h1>Clock</h1>
-    //   <span>{time.toLocaleTimeString()}</span>
-    // </div>
     <div>
-      <button onClick={button1_click}>버튼2 </button>
-      {/* <script>
-        button1_click() => {
-          console.log("버튼누름");
-          // alert('알림');
-          // 'ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ';
-        }
-      </script> */}
-      <h1>1증가 </h1>
-      {time}
+      <div>
+        
+        <h2>현재값:{time}</h2>
+        
+      </div>
+
+
+      <div>
+        <button onClick={button1_click}>+ </button>
+        <button onClick={button2_click}>-</button> 
+        {/* <script>
+          button1_click() => {
+            console.log("버튼누름");
+            // alert('알림');
+            // 'ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ';
+          }
+        </script> */}
+        {/* <h1>{time}증가</h1> */}
+        
+      </div>
     </div>
   )
 }
