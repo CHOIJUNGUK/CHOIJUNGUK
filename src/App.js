@@ -1,20 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
+import {useState} from 'react';
 function App() {
 
-  let fname = '';
+  const [fname,setfName]=useState('');
+  console.log(fname, 'fgfh');
+  
   axios({
     method:"get",
     url:"https://www.melivecode.com/api/users/1",
     responseType:"type"
 })
 .then(function(response){
+  setfName(response.data.user.fname)
   console.log('----------------------');
+  
   // console.log(response);
   // console.log(response.data);
   console.log(response.data.user.fname);
-  fname = response.data.user.fname;
+  
   console.log(response.data.user.lname);
   console.log(response.data.user.avatar);
 })
