@@ -6,6 +6,10 @@ function App() {
 
   const [fname,setfName]=useState('');
   console.log(fname, 'fgfh');
+  const [lname,setlName]=useState('');
+  console.log(lname, 'm');
+  const [avatar,setavatar]=useState('');
+  console.log(avatar, "l");
   
   axios({
     method:"get",
@@ -14,12 +18,13 @@ function App() {
 })
 .then(function(response){
   setfName(response.data.user.fname)
+  setlName(response.data.user.lname)
+  setavatar(response.data.user.avatar)
   console.log('----------------------');
-  
+
   // console.log(response);
   // console.log(response.data);
   console.log(response.data.user.fname);
-  
   console.log(response.data.user.lname);
   console.log(response.data.user.avatar);
 })
@@ -44,9 +49,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={avatar}  className="App-logo" alt="logo" />
         <p>
-          Edit <code></code> and save to reload. {fname}
+          Edit <code></code>  {fname} {lname} 
         </p>
         <a
           className="App-link"
